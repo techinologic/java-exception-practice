@@ -6,8 +6,8 @@ package com.example.java;
 public class DarthVader extends Character {
 
         String name = "Darth Vader";
-        int power = 9482;
-        int health = 26610;
+        static int power = 9482;
+        static int health = 26610;
         int speed = 121;
         int level = 1;
 
@@ -20,6 +20,8 @@ public class DarthVader extends Character {
     public void forceCrush(Character character) {
         if (this.forceCrush_coolDown == 0){
             this.forceCrush_coolDown = 5;
+        } else {
+            System.out.println("Skill is on cooldown.");
         }
         int damage = 2790;
         character.setHealth(damage-health);
@@ -31,6 +33,4 @@ public class DarthVader extends Character {
     public boolean inspiringThroughFear(Character character) {
         return false;
     }
-
-
 }
