@@ -3,7 +3,7 @@ package com.example.java;
 /**
  * Created by Paopao on 08/05/17.
  */
-public class DarthVader extends Character {
+public class DarthVader implements Char {
 
         String name = "Darth Vader";
         static int power = 9482;

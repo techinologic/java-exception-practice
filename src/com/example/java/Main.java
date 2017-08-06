@@ -44,6 +44,7 @@ public class Main {
         String turnCharName = (turn(darthVader, biggsDarklighter).getName());
 
         System.out.println(turnCharName + " will make a turn.");
+        System.out.println(darthVader.getHealth());
 
     }
 }
