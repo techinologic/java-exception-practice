@@ -10,10 +10,8 @@ public class Main {
     static int char2Meter = 1000;
 
     // method to determine which character will do turn
-    public static Character turn(Character character1, Character character2) {
+    public static Object turn(DarthVader character1, BiggsDarklighter character2) {
         int i = 0;
-
-
         int char1turn = 0;
         int char2turn = 0;
 

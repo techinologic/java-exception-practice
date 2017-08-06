@@ -30,4 +30,29 @@ public class BiggsDarklighter extends Character {
     public boolean inspiringThroughFear(Character character) {
         return false;
     }
+
+    @Override
+    public String getName() {
+        return name;
+    }
+
+    @Override
+    public int getPower() {
+        return power;
+    }
+
+    @Override
+    public int getHealth() {
+        return health;
+    }
+
+    @Override
+    public int getSpeed() {
+        return speed;
+    }
+
+    @Override
+    public int getLevel() {
+        return level;
+    }
 }
