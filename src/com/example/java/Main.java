@@ -10,17 +10,15 @@ public class Main {
     static int char2Meter = 1000;
 
     // method to determine which character will do turn
-    public static Character turn(Character character1, Character character2) {
+    public static Object turn(DarthVader character1, BiggsDarklighter character2) {
         int i = 0;
-
-
         int char1turn = 0;
         int char2turn = 0;
 
-        char1turn = character1.getSpeed() / meter;
+        char1turn = meter / character1.getSpeed();
         char1Meter += character1.getSpeed() % meter;
 
-        char2turn = character2.getSpeed() / meter;
+        char2turn = meter / character2.getSpeed();
         char2Meter += character2.getSpeed() % meter;
 
         if (char1turn == char2turn) {
@@ -41,7 +39,7 @@ public class Main {
         DarthVader darthVader = new DarthVader();
         BiggsDarklighter biggsDarklighter = new BiggsDarklighter();
 
-        String turnCharName = (turn(darthVader, biggsDarklighter).getName());
+        String turnCharName = String.valueOf(turn(darthVader, biggsDarklighter));
 
         System.out.println(turnCharName + " will make a turn.");
         System.out.println(darthVader.getHealth());

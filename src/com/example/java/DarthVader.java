@@ -3,15 +3,35 @@ package com.example.java;
 /**
  * Created by Paopao on 08/05/17.
  */
-public class DarthVader implements Char {
+public class DarthVader {
 
         String name = "Darth Vader";
-        static int power = 9482;
-        static int health = 26610;
+        int power = 9482;
+        int health = 26610;
         int speed = 121;
         int level = 1;
 
-        int forceCrush_coolDown = 0;
+    public String getName() {
+        return name;
+    }
+
+    public int getPower() {
+        return power;
+    }
+
+    public int getHealth() {
+        return health;
+    }
+
+    public int getSpeed() {
+        return speed;
+    }
+
+    public int getLevel() {
+        return level;
+    }
+
+    int forceCrush_coolDown = 0;
 
     public void terrifyingSwing(Character character) {
         int damage = 4823;
