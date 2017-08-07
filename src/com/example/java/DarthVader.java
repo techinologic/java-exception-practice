@@ -33,9 +33,9 @@ public class DarthVader {
 
     int forceCrush_coolDown = 0;
 
-    public void terrifyingSwing(Character character) {
+    public void terrifyingSwing(BiggsDarklighter character) {
         int damage = 4823;
-        character.setHealth(damage-health);
+        character.setHealth(health-damage);
     }
     public void forceCrush(Character character) {
         if (this.forceCrush_coolDown == 0){

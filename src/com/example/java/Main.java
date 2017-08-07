@@ -39,9 +39,10 @@ public class Main {
         DarthVader darthVader = new DarthVader();
         BiggsDarklighter biggsDarklighter = new BiggsDarklighter();
 
-        String turnCharName = String.valueOf(turn(darthVader, biggsDarklighter));
+        darthVader.terrifyingSwing(biggsDarklighter);
 
-        System.out.println(turnCharName + " will make a turn.");
+        turn(darthVader, biggsDarklighter);
+        System.out.println(biggsDarklighter.getHealth());
         System.out.println(darthVader.getHealth());
 
     }
