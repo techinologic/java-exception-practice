@@ -3,7 +3,7 @@ package com.example.java;
 /**
  * Created by Paopao on 08/05/17.
  */
-public class DarthVader {
+public class DarthVader extends Character{
 
         String name = "Darth Vader";
         int power = 9482;
@@ -33,7 +33,7 @@ public class DarthVader {
 
     int forceCrush_coolDown = 0;
 
-    public void terrifyingSwing(BiggsDarklighter character) {
+    protected void terrifyingSwing(Character character) {
         int damage = 4823;
         character.setHealth(health-damage);
     }

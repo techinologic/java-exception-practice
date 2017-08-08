@@ -57,4 +57,5 @@ public class Character {
     public void setLevel(int level) {
         this.level = level;
     }
+
 }

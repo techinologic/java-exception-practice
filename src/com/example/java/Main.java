@@ -10,7 +10,7 @@ public class Main {
     static int char2Meter = 1000;
 
     // method to determine which character will do turn
-    public static Object turn(DarthVader character1, BiggsDarklighter character2) {
+    public static Character turn(Character character1, Character character2) {
         int i = 0;
         int char1turn = 0;
         int char2turn = 0;
@@ -36,14 +36,18 @@ public class Main {
 
     public static void main(String[] args) {
 
-        DarthVader darthVader = new DarthVader();
-        BiggsDarklighter biggsDarklighter = new BiggsDarklighter();
+        Character darthVader = new DarthVader();
+        Character biggsDarklighter = new BiggsDarklighter();
 
-        darthVader.terrifyingSwing(biggsDarklighter);
+        DarthVader tempDarth = (DarthVader) darthVader;
+                tempDarth.terrifyingSwing(biggsDarklighter);
 
-        turn(darthVader, biggsDarklighter);
+        System.out.println(turn(darthVader, biggsDarklighter).getName()
+                + " will make a turn");
         System.out.println(biggsDarklighter.getHealth());
         System.out.println(darthVader.getHealth());
+
+
 
     }
 }
