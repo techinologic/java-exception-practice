@@ -40,11 +40,12 @@ public class Main {
         Character biggsDarklighter = new BiggsDarklighter();
 
         DarthVader tempDarth = (DarthVader) darthVader;
-                tempDarth.terrifyingSwing(biggsDarklighter);
+
+        tempDarth.terrifyingSwing(biggsDarklighter);
 
         System.out.println(turn(darthVader, biggsDarklighter).getName()
                 + " will make a turn");
-        System.out.println(biggsDarklighter.getHealth());
+        System.out.println("Biggs HP: " + tempDarth.terrifyingSwing(biggsDarklighter));
         System.out.println(darthVader.getHealth());
 
 

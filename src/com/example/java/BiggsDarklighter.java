@@ -6,10 +6,10 @@ package com.example.java;
 public class BiggsDarklighter extends Character {
 
     String name = "Biggs Darklighter";
-    int power = 8538;
-    int health = 15656;
-    int speed = 108;
-    int level = 1;
+    private int power = 8538;
+    private int health = 15656;
+    private int speed = 108;
+    private int level = 1;
 
     int specialCoolDown = 0;
 

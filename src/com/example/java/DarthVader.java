@@ -5,11 +5,11 @@ package com.example.java;
  */
 public class DarthVader extends Character{
 
-        String name = "Darth Vader";
-        int power = 9482;
-        int health = 26610;
-        int speed = 121;
-        int level = 1;
+    private String name = "Darth Vader";
+    private int power = 9482;
+    private int health = 26610;
+    private int speed = 121;
+    private int level = 1;
 
     public String getName() {
         return name;
@@ -33,10 +33,11 @@ public class DarthVader extends Character{
 
     int forceCrush_coolDown = 0;
 
-    protected void terrifyingSwing(Character character) {
+    protected int terrifyingSwing(Character character) {
         int damage = 4823;
-        character.setHealth(health-damage);
+        return (character.getHealth()-damage);
     }
+
     public void forceCrush(Character character) {
         if (this.forceCrush_coolDown == 0){
             this.forceCrush_coolDown = 5;
